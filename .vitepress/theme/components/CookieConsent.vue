@@ -3,9 +3,11 @@
         <div class="backdrop"></div>
         <div class="foreground">
             <a href="#" @click.stop.prevent="isOpen = false" class="close-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
             </a>
             <div>
                 <div>
@@ -36,9 +38,10 @@
 
 import { withBase, useData } from 'vitepress';
 import { ref, onMounted } from 'vue';
+
+
 const div = ref(null);
 const isOpen = ref(false);
-
 
 const fontCSS = `
 <style>
@@ -46,9 +49,11 @@ const fontCSS = `
 </style>
 `;
 
-const analyticsJS = `asdf`;
 
-const { site, theme } = useData()
+const AnalyticsCode = 'G-K7ZCDLK9T1';
+
+
+const { site } = useData()
 
 const state = ref({
     fonts: false,
@@ -83,7 +88,20 @@ onMounted(() => {
         document.head.insertAdjacentHTML('beforeend', fontCSS);
     }
     if (state.value.analytics) {
-        document.head.insertAdjacentHTML('beforeend', analyticsJS);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+            window.dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        const s = document.createElement('script');
+        s.addEventListener('load', () => {
+            gtag('config', AnalyticsCode);
+        });
+        s.setAttribute('async', '');
+        s.setAttribute('src', `https://www.googletagmanager.com/gtag/js?id=${AnalyticsCode}`);
+        document.head.appendChild(s);
+
     }
 });
 
@@ -116,7 +134,7 @@ const accept = function (what) {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .close-button{
+    .close-button {
         position: absolute;
         right: 1rem;
         top: 1rem;
