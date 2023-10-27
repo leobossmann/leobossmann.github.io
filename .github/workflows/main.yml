@@ -1,4 +1,4 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Based on: Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy vitepress to USERNAME.github.io page
 
 on:

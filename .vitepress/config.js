@@ -6,6 +6,8 @@ import { log } from 'console';
 
 const pageSize = 10
 
+const URL = 'https://mtillmann.github.io';
+
 export default defineConfig({
     title: 'Martin\'s Blog',
     base: '/',
@@ -14,7 +16,7 @@ export default defineConfig({
     ignoreDeadLinks: true,
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://mtillmann.github.io', //copyright link
+        website: URL, //copyright link
         comment: {
             repo: 'Mtillmann/mtillmann.github.io',
             themes: 'github-light',
@@ -54,6 +56,6 @@ export default defineConfig({
         server: { port: 5000 }
     },
     sitemap: {
-        hostname: 'https://mtillmann.github.io'
+        hostname: URL
     }
 })
