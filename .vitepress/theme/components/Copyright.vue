@@ -34,7 +34,7 @@ const title = site.value.title
 .site-footer {
     color: #888;
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.66rem;
     width: 100%;
     padding: 15px 0;
     overflow: auto;
