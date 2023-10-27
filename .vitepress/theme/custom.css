@@ -46,9 +46,6 @@ h6, .title {
     text-decoration: none;
 }
 
-.vp-doc p {
-    font-size: 0.9375rem;
-}
 
 .title {
     color: var(--vp-c-text-1);
