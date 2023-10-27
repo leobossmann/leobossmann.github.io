@@ -33,8 +33,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <div ref="utterancesRef">
+    <div class="utteranceTeoggle" ref="utterancesRef">
         <button @click="loadUtterances" ref="loadButton">load utterances comments</button>
+        <br>
+        <small>Clicking this button loads third-party content from utteranc.es and github.com</small>
     </div>
 </template>
 
@@ -43,4 +45,20 @@ onMounted(() => {
 .utterances {
     max-width: inherit !important;
 }
+
+.utteranceTeoggle {
+    text-align: center;
+    margin: 4rem 0 0 0;
+    & button{
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid var(--vp-c-brand);
+        cursor: pointer;   
+    }
+
+    & small {
+        font-size: 65%;
+    }
+}
+
 </style>

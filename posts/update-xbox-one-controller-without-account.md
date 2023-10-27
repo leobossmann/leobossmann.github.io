@@ -32,3 +32,5 @@ Do these steps to update your controller:
 Done! Now your controller can connect to your steam deck via bluetooth.
 
 > \* `9NBLGGH30XJ3` is the ID of the xbox accessories app in the microsoft store. If you have the store installed, you can also open the store and search for "xbox accessories" and install it from there. 
+
+<Comment />
