@@ -165,13 +165,7 @@ const accept = function (what) {
             margin: 0 0.5rem;
             cursor: pointer;
 
-            &.accept-none {
-                /* background-color: var(--vp-c-danger-soft); */
-            }
 
-            &.accept-fonts {
-                /* background-color: var(--vp-c-warning-soft); */
-            }
 
             &.accept-all {
                 background-color: var(--vp-c-tip-soft);

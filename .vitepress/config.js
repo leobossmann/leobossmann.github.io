@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { getPosts } from './theme/serverUtils'
-import package from '../package.json';
+
 import { readdirSync, writeFileSync } from 'fs';
 import { log } from 'console';
 

@@ -1,0 +1,15 @@
+on: push
+name: deploy
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: get
+        uses: actions/checkout@v3
+      - run: npm install
+      - run: npm run build
+      - name: extract from dist folder to .
+        run: |
+          find . -mindepth 1 -maxdepth 1 -type d -not -name dist
