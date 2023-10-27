@@ -1,5 +1,5 @@
 on: push
-name: deploy
+name: deploy-as-username-gh-page
 jobs:
   web-deploy:
     name: Deploy
