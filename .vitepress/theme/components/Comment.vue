@@ -4,10 +4,10 @@ import { useData } from 'vitepress'
 const utterancesRef = ref()
 const { theme, isDark } = useData()
 
-const loadButton = ref()
+const toggleUi = ref()
 
 const loadUtterances = () => {
-    loadButton.value.remove();
+    toggleUi.value.remove();
     let { repo, issueTerm = 'pathname' } = theme.value.comment;
     if (repo) {
         let utterances = document.createElement('script')
@@ -34,9 +34,11 @@ onMounted(() => {
 
 <template>
     <div class="utteranceTeoggle" ref="utterancesRef">
-        <button @click="loadUtterances" ref="loadButton">load utterances comments</button>
-        <br>
-        <small>Clicking this button loads third-party content from utteranc.es and github.com</small>
+        <div ref="toggleUi">
+            <button @click="loadUtterances">load utterances comments</button>
+            <br>
+            <small>Clicking this button loads third-party content from utteranc.es and github.com</small>
+        </div>
     </div>
 </template>
 
@@ -49,16 +51,16 @@ onMounted(() => {
 .utteranceTeoggle {
     text-align: center;
     margin: 4rem 0 0 0;
-    & button{
+
+    & button {
         padding: 10px 20px;
         border-radius: 5px;
         border: 1px solid var(--vp-c-brand);
-        cursor: pointer;   
+        cursor: pointer;
     }
 
     & small {
         font-size: 65%;
     }
 }
-
 </style>
