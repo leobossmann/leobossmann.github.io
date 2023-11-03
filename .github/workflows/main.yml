@@ -1,5 +1,5 @@
 # Based on: Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy vitepress to USERNAME.github.io page
+name: Deploy vitepress to leobossmann.github.io page
 
 on:
   # Runs on pushes targeting the default branch
