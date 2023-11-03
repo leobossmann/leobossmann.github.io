@@ -1,6 +1,6 @@
 ---
 search: false
-title: Privacy Policy for Martin's Blog
+title: Privacy Policy for Leo's Blog
 #lastUpdated: 4-09-2023
 date: 4-09-2023
 ---
@@ -9,7 +9,7 @@ date: 4-09-2023
 
 ## 1. Introduction
 
-Welcome to Martin's Blog. This website is committed to protecting your privacy and complying with applicable data protection laws, including the General Data Protection Regulation (GDPR). This Privacy Policy explains how this website collects, uses, discloses, and protects your personal information when you visit my blog hosted on GitHub and optionally use Google Fonts and Google Analytics. Additionally, this website uses the Utterances commenting system, but only if you choose to load it.
+Welcome to Leo's Blog. This website is committed to protecting your privacy and complying with applicable data protection laws, including the General Data Protection Regulation (GDPR). This Privacy Policy explains how this website collects, uses, discloses, and protects your personal information when you visit my blog hosted on GitHub and optionally use Google Fonts and Google Analytics. Additionally, this website uses the Utterances commenting system, but only if you choose to load it.
 
 Please take a moment to read this Privacy Policy carefully to understand how this website handles your personal information.
 

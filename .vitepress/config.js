@@ -6,10 +6,10 @@ import { log } from 'console';
 
 const pageSize = 10
 
-const URL = 'https://mtillmann.github.io';
+const URL = 'https://leobossmann.github.io';
 
 export default defineConfig({
-    title: 'Martin\'s Blog',
+    title: 'Leo\'s Blog',
     base: '/',
     cacheDir: './node_modules/vitepress_cache',
     description: 'vitepress,blog,blog-theme',
@@ -18,7 +18,7 @@ export default defineConfig({
         posts: await getPosts(pageSize),
         website: URL, //copyright link
         comment: {
-            repo: 'Mtillmann/mtillmann.github.io',
+            repo: 'leobossmann/leobossmann.github.io',
             themes: 'github-light',
             issueTerm: 'pathname'
         },
@@ -46,7 +46,7 @@ export default defineConfig({
             },
             {
                 icon: 'github',
-                link: 'https://github.com/Mtillmann/mtillmann.github.io'
+                link: 'https://github.com/leobossmann/leobossmann.github.io'
             }]
     },
     srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
