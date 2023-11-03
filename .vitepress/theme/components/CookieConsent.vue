@@ -50,7 +50,7 @@ const fontCSS = `
 `;
 
 
-const AnalyticsCode = 'G-7S3Y1HE297';
+const AnalyticsCode = 'G-9B6R8YZWJR';
 
 
 const { site } = useData()
