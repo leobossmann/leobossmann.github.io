@@ -4,8 +4,8 @@
         <span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
             <a property="dct:title" rel="cc:attributionURL" href="https://leobossmann.github.io">{{ title }}</a>
             by
-            <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Mtillmann">Martin
-                Tillmann</a>
+            <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/leobossmann">Leo
+                Bossmann</a>
 
             is licensed under
 
