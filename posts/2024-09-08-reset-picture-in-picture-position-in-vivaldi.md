@@ -15,6 +15,8 @@ I use [Vivaldi Browser](https://vivaldi.com) as my daily driver, and it's mostly
 
 This script resets the PIP window's placement:
 
+Dependencies: [Install jq](https://github.com/jqlang/jq)
+
 ```bash
 #!/bin/bash
 
