@@ -10,7 +10,7 @@ tags:
 
 <Title/>
 
-I have recently set up a [Dokku](https://dokku.com) instance on a spmple VPS, naturally I wanted to host this blog on it. Mainly because Google does not index github.io blogs.
+I have recently set up a [Dokku](https://dokku.com) instance on a simple VPS, naturally I wanted to host this blog on it. Mainly because Google does not index github.io blogs.
 
 The setup is based on [this article](https://johnfraney.ca/blog/build-deploy-static-site-dokku/).
 
