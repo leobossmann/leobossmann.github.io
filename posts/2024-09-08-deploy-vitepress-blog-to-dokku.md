@@ -48,11 +48,17 @@ dokku letsencrypt:set --global email your@email.address
 dokku letsencrypt:cron-job --add
 ```
 Enable SSL for the app:
-`dokku letsencrypt:enable blog`
+```bash
+dokku letsencrypt:enable blog
+```
 
 ## Steps on local machine
 ### 1. Add dokku as a remote on local machine
-`git remote add dokku dokku@your-dokku-server:blog`
+```bash
+git remote add dokku dokku@your-dokku-server:blog
+```
 
 ### 2. Push to dokku server
-`git push dokku main`
+```bash
+git push dokku main
+```
