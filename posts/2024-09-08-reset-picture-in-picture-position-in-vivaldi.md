@@ -40,3 +40,5 @@ rm ~/Library/Application\ Support/Vivaldi/Default/Preferences.bak
 # re-open Vivaldi
 open -a Vivaldi
 ````
+
+<Comment />
